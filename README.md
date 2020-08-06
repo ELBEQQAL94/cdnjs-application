@@ -10,6 +10,7 @@
 * [x] setup vscode for angular
 * [x] install new project in angular
 * [x] run basic application using angular
+* [x] run hello world application!
 * [] state managment
 
 # Rest API's:
