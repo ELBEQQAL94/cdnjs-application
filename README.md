@@ -4,5 +4,5 @@
 
 # TODO:
 * [x] add application to github
-* [] setup vscode for angular
+* [x] setup vscode for angular
 * [] state managment
