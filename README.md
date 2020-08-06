@@ -3,6 +3,6 @@
 # Tech Stacks
 
 # TODO:
-* [] add application to github
+* [x] add application to github
 * [] setup vscode for angular
 * [] state managment
