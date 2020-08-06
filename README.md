@@ -11,7 +11,9 @@
 * [x] install new project in angular
 * [x] run basic application using angular
 * [x] run hello world application!
-* [] state managment
+* [x] add bootstrap
+* [ ] clone bootstrap landing page
+* [ ] state managment
 
 # Rest API's:
 
