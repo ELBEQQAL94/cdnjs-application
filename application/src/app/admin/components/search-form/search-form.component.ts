@@ -16,13 +16,9 @@ export class SearchFormComponent implements OnInit {
 
   constructor(private searchService: SearchFormServiceService) { }
 
-  onSelect(library: Library) : void {
-    this.selectedLibrary = library;
-  }
-
   getLibraries(): void {
-    this.searchService.getLibraries()
-    .subscribe(libraries => this.libraries = libraries);
+    this.searchService.getLibraries('vue')
+    .subscribe(data => console.log(data));
   }
 
   ngOnInit() {

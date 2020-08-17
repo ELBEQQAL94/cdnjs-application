@@ -12,7 +12,9 @@
 * [x] run basic application using angular
 * [x] run hello world application!
 * [x] add bootstrap
-* [ ] Get data from server
+* [x] add navigation
+* [ ] handle not found path
+* [x] Get data from server
 * [ ] Show data on console.log
 * [ ] Validate user input and display errors if query is empty
 * [ ] Send query to server and get result 
@@ -21,6 +23,7 @@
 * [ ] state managment
 * [ ] Add footer
 * [ ] Deploy application
+* [ ] Add autocomplete textbox for better user experience
 
 # Rest API's:
 

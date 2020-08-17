@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +20,7 @@ import { SearchReasultComponent } from './admin/pages/search-reasult/search-reas
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
