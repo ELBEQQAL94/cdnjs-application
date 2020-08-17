@@ -12,8 +12,15 @@
 * [x] run basic application using angular
 * [x] run hello world application!
 * [x] add bootstrap
-* [ ] clone bootstrap landing page
+* [ ] Get data from server
+* [ ] Show data on console.log
+* [ ] Validate user input and display errors if query is empty
+* [ ] Send query to server and get result 
+* [ ] Show result on console.log
+* [ ] Redirect user to result page
 * [ ] state managment
+* [ ] Add footer
+* [ ] Deploy application
 
 # Rest API's:
 
