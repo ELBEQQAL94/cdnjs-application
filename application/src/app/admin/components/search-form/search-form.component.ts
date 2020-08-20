@@ -31,9 +31,30 @@ export class SearchFormComponent implements OnInit {
 
   getLibraries(query: string): void {
     this.searchService.getLibraries(query)
-    .subscribe(({name, latest}) => {
-      // call add library action
-      this.store.dispatch(new LibraryActions.AddLibrary({ name, latest }));
+    .subscribe((
+      {
+        name,
+        latest,
+        authors,
+        description,
+        homepage,
+        license,
+        repository,
+        version,
+        tutorials
+      }) => {
+        const data =  {
+          name,
+          latest,
+          authors,
+          description,
+          homepage,
+          license,
+          repository,
+          version,
+          tutorials
+        };
+      this.store.dispatch(new LibraryActions.AddLibrary(data));
     });
   }
 

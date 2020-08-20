@@ -17,7 +17,7 @@ export class SearchReasultComponent implements OnInit {
     store.pipe(select('library'))
     .subscribe((value) => {
       this.library = value;
-      console.log(value)
+      console.log('value from result component: ', value)
     });
   }
 
