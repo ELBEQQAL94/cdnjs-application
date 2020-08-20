@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+import { StoreModule } from '@ngrx/store';
+import { reducer } from './store/reducers/library.reducer';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchFormComponent } from './admin/components/search-form/search-form.component';
@@ -21,6 +24,9 @@ import { SearchReasultComponent } from './admin/pages/search-reasult/search-reas
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    StoreModule.forRoot({
+      library: reducer
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

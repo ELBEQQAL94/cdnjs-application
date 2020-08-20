@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Store,  select } from '@ngrx/store';
+import { Library } from '../../../interface/library';
+import { AppState } from '../../../app.state';
 
 @Component({
   selector: 'app-search-reasult',
@@ -7,7 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchReasultComponent implements OnInit {
 
-  constructor() { }
+  library: Library;
+
+  constructor(private store: Store<AppState>) {
+    store.pipe(select('library'))
+    .subscribe((value) => {
+      this.library = value;
+      console.log(value)
+    });
+  }
 
   ngOnInit(): void {
   }
