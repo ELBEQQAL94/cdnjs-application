@@ -31,19 +31,8 @@ export class SearchFormComponent implements OnInit {
 
   getLibraries(query: string): void {
     this.searchService.getLibraries(query)
-    .subscribe((
-      {
-        name,
-        latest,
-        authors,
-        description,
-        homepage,
-        license,
-        repository,
-        version,
-        tutorials
-      }) => {
-        const data =  {
+    .subscribe((data) => {
+        const {
           name,
           latest,
           authors,
@@ -53,7 +42,7 @@ export class SearchFormComponent implements OnInit {
           repository,
           version,
           tutorials
-        };
+        } = data;
       this.store.dispatch(new LibraryActions.AddLibrary(data));
     });
   }
@@ -63,11 +52,14 @@ export class SearchFormComponent implements OnInit {
       this.error = "This field is required";
     } else {
       this.error = "";
+
+      // user search
       const { search } = f.value;
-      this.query = search;
+      this.query = search.toLowerCase();
       this.getLibraries(this.query);
+
       // redirect to search page
-      this.router.navigate(['/search'])
+      this.router.navigate([`/search/${this.query}`])
 
     }
   }

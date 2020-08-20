@@ -28,7 +28,7 @@
 * [ ] Deploy application
 * [ ] Add autocomplete textbox for better user experience
 * [ ] Setup Ngrx for state management 
-* [ ] Add name of libraries dynamicly on url route
+* [x] Add name of libraries dynamicly on url route
 
 # Rest API's:
 
