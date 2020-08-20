@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { SearchFormComponent } from './admin/components/search-form/search-form.component';
 import { HomeComponent } from './admin/pages/home/home.component';
 import { SearchReasultComponent } from './admin/pages/search-reasult/search-reasult.component';
+import { SearchInputComponent } from './admin/components/search-input/search-input.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SearchReasultComponent } from './admin/pages/search-reasult/search-reas
     SearchFormComponent,
     HomeComponent,
     SearchReasultComponent,
+    SearchInputComponent,
   ],
   imports: [
     BrowserModule,

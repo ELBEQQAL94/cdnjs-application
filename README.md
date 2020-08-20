@@ -29,6 +29,7 @@
 * [ ] Add autocomplete textbox for better user experience
 * [ ] Setup Ngrx for state management 
 * [x] Add name of libraries dynamicly on url route
+* [ ] Working on result page
 
 # Rest API's:
 
