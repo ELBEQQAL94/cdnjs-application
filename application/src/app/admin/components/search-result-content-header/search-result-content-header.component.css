@@ -1,0 +1,10 @@
+.content-section-header .main-title{
+  text-transform: uppercase;
+}
+
+.content-section-header a{
+  text-transform: uppercase;
+  font-size: 1em;
+  color: aqua;
+  transition: all 1s linear;
+}

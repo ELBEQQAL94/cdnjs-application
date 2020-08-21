@@ -1,59 +1,17 @@
-main header {
-  background-color: #5b8596;
-  height: 15vh;
-  padding: 60px 30px;
-  display: flex;
-  align-items: center;
+
+
+.content-section {
+  margin-top: 3em;
 }
 
-main header .logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.content-section .content-section-container {
+  padding: 60px;
 }
 
-main header .logo-container img {
-  height: 10vh;
-  border-radius: 50%;
+.content-section .content-section-container .tutorials-section{
+  color: black;
 }
 
-main header .search-input-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 7px;
-}
-
-main header .search-input-container .form-group{
-  width: 100%;
-  background-color: yellow;
-}
-
-@media(max-width: 768px) {
-  main header {
-    padding: 10vw;
-  }
-  main header .logo-container img {
-    margin-bottom: 10px;
-  }
-}
-
-@media(max-width: 700px) {
-  main header {
-    padding: 15vw;
-  }
-  main header .logo-container img {
-    margin-bottom: 10px;
-  }
-}
-
-
-@media(max-width: 568px) {
-  main header {
-    padding: 20vw;
-  }
-  main header .logo-container img {
-    margin-bottom: 10px;
-  }
+.content-section .content-section-container .tutorials-section .card p{
+  font-family: monospace;
 }

@@ -30,6 +30,7 @@
 * [ ] Setup Ngrx for state management 
 * [x] Add name of libraries dynamicly on url route
 * [ ] Working on result page
+* [ ] Redirect user to home page if query is empty!
 
 # Rest API's:
 
